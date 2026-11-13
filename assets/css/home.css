@@ -96,3 +96,5 @@ html[lang="ru"] .page-home .home-hero h1{font-size:clamp(2rem,4.9vw,4.4rem)}
 }
 
 .ac-text h2::after{content:"."}
+
+.hero-sub b{font-weight:700;color:var(--ink)}
