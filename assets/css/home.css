@@ -48,7 +48,7 @@ html[lang="ru"] .page-home .home-hero h1{font-size:clamp(2.4rem,6.6vw,6rem)}
 .ac-text{position:relative;z-index:3;max-width:26ch}
 .ac-text h2,.ac-text p{display:inline;font:600 clamp(1.3rem,1.8vw,1.6rem)/1.2 var(--font-display);letter-spacing:-.03em}
 .ac-text p{margin:0 0 0 .3em;font-weight:500;opacity:.72;letter-spacing:-.015em}
-.ac-visual{position:relative;flex:1;min-height:clamp(300px,26vw,380px);margin:18px calc(-1*var(--pad)) calc(-1*var(--pad));z-index:1;overflow:hidden;
+.ac-visual{position:relative;flex:1 1 0px;min-height:clamp(300px,26vw,380px);margin:18px calc(-1*var(--pad)) calc(-1*var(--pad));z-index:1;overflow:hidden;
   -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 18%,#000 82%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 18%,#000 82%,transparent 100%)}
 
 /* Digital: chips scroll up like a list of services */
