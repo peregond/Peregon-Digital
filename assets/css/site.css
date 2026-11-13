@@ -492,3 +492,6 @@ a.pill:hover{background:var(--fg);color:var(--bg)}
 }
 @media print{.site-header,.rail,.lang{display:none}.yt::after,.yt::before{display:none}}
 
+
+/* shared footer: only the back-to-top link sits at the bottom, on the right */
+.footer-bottom{justify-content:flex-end}

@@ -14,6 +14,7 @@
     'f.h': 'Hire, портфолио и резюме',
     'f.v': 'Vibe, приложения',
     'f.contact': 'Контакты',
+    'f.write': 'Напишите мне',
     'f.rights': '© 2026 Peregon Digital. Дмитрий Перегон.',
     'f.top': 'Наверх',
     'yt.play': 'Смотреть'
@@ -55,6 +56,15 @@
     if (!b) return;
     try { localStorage.setItem('lang', b.dataset.lang); } catch (err) {}
     applyLang(b.dataset.lang);
+  });
+
+  /* ---------- "Back to top": the #top anchor sits on a sticky header, so scroll explicitly ---------- */
+  doc.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href="#top"]');
+    if (!a) return;
+    e.preventDefault();
+    var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: calm ? 'auto' : 'smooth' });
   });
 
   /* ---------- Video tiles: a link to YouTube that becomes a player on click ---------- */
