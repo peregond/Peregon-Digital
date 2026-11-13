@@ -15,7 +15,7 @@
     'f.v': 'Vibe, приложения',
     'f.contact': 'Контакты',
     'f.rights': '© 2026 Peregon Digital. Дмитрий Перегон.',
-    'f.top': 'Наверх ↑',
+    'f.top': 'Наверх',
     'yt.play': 'Смотреть'
   };
   var RU = Object.assign({}, COMMON_RU, window.I18N_RU || {});
