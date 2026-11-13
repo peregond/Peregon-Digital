@@ -10,138 +10,112 @@
 <meta property="og:description" content="Production company, producer portfolio and side-project apps. Three lines from one station.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://peregon.cc/">
-<meta name="theme-color" content="#F3F3EE">
+<meta name="theme-color" content="#EFEFEA">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/assets/fonts/geologica-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css">
 <link rel="stylesheet" href="/assets/css/home.css">
 </head>
 <body class="page-hub">
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="22" result="b"/>
-    <feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9"/></filter>
-</svg>
+<div class="shell">
+  <header class="bar">
+    <a class="brand" href="/" aria-label="peregon.cc">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="4.6" aria-hidden="true">
+      <circle class="arc-d" cx="12" cy="12" r="8" stroke-dasharray="14.755 35.51" transform="rotate(-86 12 12)"/>
+      <circle class="arc-h" cx="12" cy="12" r="8" stroke-dasharray="14.755 35.51" transform="rotate(34 12 12)"/>
+      <circle class="arc-v" cx="12" cy="12" r="8" stroke-dasharray="14.755 35.51" transform="rotate(154 12 12)"/>
+    </svg>
+    <span>peregon</span><small>.cc</small></a>
+    <nav aria-label="Lines">
+      <a class="tactile" href="/digital"><i class="bullet bullet-d">D</i>Digital</a>
+      <a class="tactile" href="/hire"><i class="bullet bullet-h">H</i>Hire</a>
+      <a class="tactile" href="/vibe"><i class="bullet bullet-v">V</i>Vibe</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">en</button>
+      <button type="button" data-lang="ru" aria-pressed="false">ru</button>
+    </div>
+    <a class="tactile tactile-dark mail-btn" href="mailto:peregond@icloud.com" data-i18n="t.mail">Get in touch</a>
+  </header>
 
-<header class="hub-top">
-  <a class="brand" href="/" aria-label="peregon.cc">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="4.6" aria-hidden="true">
-        <circle class="arc-d" cx="12" cy="12" r="8" stroke-dasharray="14.755 35.51" transform="rotate(-86 12 12)"/>
-        <circle class="arc-h" cx="12" cy="12" r="8" stroke-dasharray="14.755 35.51" transform="rotate(34 12 12)"/>
-        <circle class="arc-v" cx="12" cy="12" r="8" stroke-dasharray="14.755 35.51" transform="rotate(154 12 12)"/>
-      </svg>
-      <span>peregon</span><small>.cc</small>
-  </a>
-  <nav aria-label="Lines">
-    <a class="tactile" href="/digital"><i class="bullet bullet-d">D</i>Digital</a>
-    <a class="tactile" href="/hire"><i class="bullet bullet-h">H</i>Hire</a>
-    <a class="tactile" href="/vibe"><i class="bullet bullet-v">V</i>Vibe</a>
-  </nav>
-  <div class="lang" role="group" aria-label="Language">
-    <button type="button" data-lang="en" aria-pressed="true">en</button>
-    <button type="button" data-lang="ru" aria-pressed="false">ru</button>
-  </div>
-  <a class="tactile tactile-dark mail-btn" href="mailto:peregond@icloud.com" data-i18n="t.mail">Get in touch</a>
-</header>
-
-<main>
-  <section class="hero" id="hero">
-    <div class="goo" aria-hidden="true"><i class="blob blob-d"></i><i class="blob blob-h"></i><i class="blob blob-v"></i></div>
-    <div class="dots" aria-hidden="true"></div>
-    <div class="hero-inner">
-      <img class="hero-photo" src="/assets/img/dmitrii.webp" width="526" height="526" alt="Dmitrii Peregon" data-i18n-attr="alt:h.alt">
-      <h1 data-i18n="h.h1">Dmitrii Peregon <a class="to-d" href="/digital">runs a production company</a>, <a class="to-h" href="/hire">produces video</a> and <a class="to-v" href="/vibe">vibe-codes apps</a>.</h1>
-      <p class="hero-sub" data-i18n="h.about">Six years of producing video, streams and podcasts. Apps on the side.</p>
-      <div class="hero-cta">
-        <a class="tactile tactile-dark" href="/hire" data-i18n="x.cv">See the CV</a>
-        <a class="tactile" href="/digital" data-i18n="x.studio">Peregon Digital</a>
+  <main class="bento">
+    <section class="tile t-intro">
+      <div class="who">
+        <img src="/assets/img/dmitrii.webp" width="526" height="526" alt="Dmitrii Peregon" data-i18n-attr="alt:h.alt">
+        <div><b data-i18n="h.alt">Dmitrii Peregon</b><span data-i18n="h.role">Video producer, Peregon Digital</span></div>
       </div>
-    </div>
-  </section>
+      <div>
+        <h1 data-i18n="h.h1">Dmitrii Peregon <a class="to-d" href="/digital">runs a production company</a>, <a class="to-h" href="/hire">produces video</a> and <a class="to-v" href="/vibe">vibe-codes apps</a>.</h1>
+        <p data-i18n="h.about">Six years of producing video, streams and podcasts. Apps on the side.</p>
+      </div>
+    </section>
 
-  <section class="lines" aria-labelledby="lines-h">
-    <div class="sec-head">
-      <h2 id="lines-h" data-i18n="x.lines">Where to go</h2>
-    </div>
-    <div class="cards">
-      <a class="lcard lcard-d" href="/digital">
-        <div class="lcard-shot"><img src="/assets/img/work/gbfrgUn2MOQ.webp" width="960" height="540" alt="" loading="lazy"></div>
-        <div class="lcard-top"><i class="bullet bullet-d">D</i><span class="lcard-url">peregon.cc/digital</span></div>
-        <div><h3>Digital</h3><p data-i18n="h.d">Production company. Video, streams and podcasts for business.</p></div>
-        <span class="lcard-go"><span data-i18n="x.open">Open</span><i>→</i></span>
-      </a>
-      <a class="lcard lcard-h" href="/hire">
-        <div class="lcard-shot"><img src="/assets/img/work/o5N4jWkozaY.webp" width="960" height="540" alt="" loading="lazy"></div>
-        <div class="lcard-top"><i class="bullet bullet-h">H</i><span class="lcard-url">peregon.cc/hire</span></div>
-        <div><h3>Hire</h3><p data-i18n="h.h">Portfolio and CV of a video producer.</p></div>
-        <span class="lcard-go"><span data-i18n="x.open">Open</span><i>→</i></span>
-      </a>
-      <a class="lcard lcard-v" href="/vibe">
-        <div class="lcard-shot"><img src="/assets/img/vibe/kachalka-featured.webp" width="1424" height="892" alt="" loading="lazy"></div>
-        <div class="lcard-top"><i class="bullet bullet-v">V</i><span class="lcard-url">peregon.cc/vibe</span></div>
-        <div><h3>Vibe</h3><p data-i18n="h.v">Four apps built with AI coding tools.</p></div>
-        <span class="lcard-go"><span data-i18n="x.open">Open</span><i>→</i></span>
-      </a>
-    </div>
-  </section>
+    <a class="tile ltile l-d" href="/digital">
+      <div class="top"><i class="bullet bullet-d">D</i><span class="url">peregon.cc/digital</span></div>
+      <h2>Digital</h2>
+      <p data-i18n="h.d">Production company. Video, streams and podcasts for business.</p>
+      <div class="shot"><img src="/assets/img/work/gbfrgUn2MOQ.webp" width="960" height="540" alt="" loading="lazy"></div>
+      <span class="go">→</span>
+    </a>
 
-  <section class="reel" aria-label="Selected work">
-    <div class="reel-track">
-        <a class="reel-item" href="/digital#work"><img src="/assets/img/work/gbfrgUn2MOQ.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-d">D</i>Monetag</span></a>
-        <a class="reel-item" href="https://ka4alka.cc" rel="noopener"><img src="/assets/img/vibe/kachalka-featured.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-v">V</i>Kachalka</span></a>
-        <a class="reel-item" href="/hire"><img src="/assets/img/work/o5N4jWkozaY.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-h">H</i>The Money Has Arrived</span></a>
-        <a class="reel-item" href="/digital#work"><img src="/assets/img/work/atLv50dhObE.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-d">D</i>Numiverse</span></a>
-        <a class="reel-item" href="https://celik.peregon.cc" rel="noopener"><img src="/assets/img/vibe/celik-mac.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-v">V</i>Super Celik</span></a>
-        <a class="reel-item" href="/digital#work"><img src="/assets/img/work/O16nj-dIBHU.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-d">D</i>Selectel</span></a>
-        <a class="reel-item" href="/hire"><img src="/assets/img/work/cSgYvAuHnYk.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-h">H</i>What the Server Keeps Quiet</span></a>
-        <a class="reel-item" href="/vibe#unik"><img src="/assets/img/vibe/unik-format.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-v">V</i>Uniquifier</span></a>
-        <a class="reel-item" href="/digital#work"><img src="/assets/img/work/emPqwdxOwn4.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-d">D</i>PropellerAds</span></a>
-        <a class="reel-item" href="/digital#work" aria-hidden="true" tabindex="-1"><img src="/assets/img/work/gbfrgUn2MOQ.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-d">D</i>Monetag</span></a>
-        <a class="reel-item" href="https://ka4alka.cc" rel="noopener" aria-hidden="true" tabindex="-1"><img src="/assets/img/vibe/kachalka-featured.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-v">V</i>Kachalka</span></a>
-        <a class="reel-item" href="/hire" aria-hidden="true" tabindex="-1"><img src="/assets/img/work/o5N4jWkozaY.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-h">H</i>The Money Has Arrived</span></a>
-        <a class="reel-item" href="/digital#work" aria-hidden="true" tabindex="-1"><img src="/assets/img/work/atLv50dhObE.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-d">D</i>Numiverse</span></a>
-        <a class="reel-item" href="https://celik.peregon.cc" rel="noopener" aria-hidden="true" tabindex="-1"><img src="/assets/img/vibe/celik-mac.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-v">V</i>Super Celik</span></a>
-        <a class="reel-item" href="/digital#work" aria-hidden="true" tabindex="-1"><img src="/assets/img/work/O16nj-dIBHU.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-d">D</i>Selectel</span></a>
-        <a class="reel-item" href="/hire" aria-hidden="true" tabindex="-1"><img src="/assets/img/work/cSgYvAuHnYk.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-h">H</i>What the Server Keeps Quiet</span></a>
-        <a class="reel-item" href="/vibe#unik" aria-hidden="true" tabindex="-1"><img src="/assets/img/vibe/unik-format.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-v">V</i>Uniquifier</span></a>
-        <a class="reel-item" href="/digital#work" aria-hidden="true" tabindex="-1"><img src="/assets/img/work/emPqwdxOwn4.webp" width="960" height="600" alt="" loading="lazy"><span><i class="bullet bullet-d">D</i>PropellerAds</span></a>
-    </div>
-  </section>
+    <a class="tile ltile l-h" href="/hire">
+      <div class="top"><i class="bullet bullet-h">H</i><span class="url">peregon.cc/hire</span></div>
+      <h2>Hire</h2>
+      <p data-i18n="h.h">Portfolio and CV of a video producer.</p>
+      <div class="shot"><img src="/assets/img/work/o5N4jWkozaY.webp" width="960" height="540" alt="" loading="lazy"></div>
+      <span class="go">→</span>
+    </a>
 
-  <section class="talk" aria-labelledby="talk-h">
-    <div class="talk-box">
-      <h2 id="talk-h" data-i18n="c.h">Let's talk</h2>
-      <p data-i18n="c.p">Production, a role or an app idea.</p>
-      <div class="talk-row">
+    <a class="tile ltile l-v" href="/vibe">
+      <div class="top"><i class="bullet bullet-v">V</i><span class="url">peregon.cc/vibe</span></div>
+      <h2>Vibe</h2>
+      <p data-i18n="h.v">Four apps built with AI coding tools.</p>
+      <div class="shot"><img src="/assets/img/vibe/kachalka-featured.webp" width="1424" height="892" alt="" loading="lazy"></div>
+      <span class="go">→</span>
+    </a>
+
+    <a class="tile imgt i1" href="https://celik.peregon.cc" rel="noopener">
+      <img src="/assets/img/vibe/celik-mac.webp" width="1024" height="674" alt="" loading="lazy">
+      <span class="chip"><i class="bullet bullet-v">V</i><span>Super Celik<small data-i18n="c.cp">ID card reader for Serbia</small></span></span>
+    </a>
+    <a class="tile imgt i2" href="/digital#work">
+      <img src="/assets/img/work/atLv50dhObE.webp" width="960" height="540" alt="" loading="lazy">
+      <span class="chip"><i class="bullet bullet-d">D</i><span>Numiverse<small data-i18n="c.tz">Launch teaser</small></span></span>
+    </a>
+
+    <section class="tile t-talk">
+      <div>
+        <h2 data-i18n="c.h">Let's talk</h2>
+        <p data-i18n="c.p">Production, a role or an app idea.</p>
+      </div>
+      <div class="row">
         <button class="tactile copy-btn" type="button" id="copy" data-mail="peregond@icloud.com"><span data-i18n="x.copy">Copy email</span></button>
         <a class="tactile" href="https://t.me/peregond" rel="noopener">Telegram</a>
-        <a class="tactile" href="https://www.linkedin.com/in/peregond/" rel="noopener">LinkedIn</a>
         <a class="tactile" href="https://github.com/peregond" rel="noopener">GitHub</a>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
+  </main>
 
-<footer class="hub-foot">
-  <span data-i18n="f.rights">© 2026 Peregon Digital. Dmitrii Peregon.</span>
-  <span data-i18n="f.note">Peregon: the stretch of track between two stations. This site has three.</span>
-</footer>
+  <footer class="foot">
+    <span data-i18n="f.rights">© 2026 Peregon Digital. Dmitrii Peregon.</span>
+    <span data-i18n="f.note">Peregon: the stretch of track between two stations. This site has three.</span>
+  </footer>
+</div>
 
 <script>
 window.I18N_RU = {
   'title': 'Дмитрий Перегон',
   'h.h1': 'Дмитрий Перегон <a class="to-d" href="/digital">руководит продакшен-компанией</a>, <a class="to-h" href="/hire">продюсирует видео</a> и <a class="to-v" href="/vibe">вайбкодит приложения</a>.',
+  'h.alt': 'Дмитрий Перегон',
+  'h.role': 'Видеопродюсер, Peregon Digital',
+  'h.about': 'Шесть лет продюсирую видео, стримы и подкасты. Приложения — в свободное время.',
   'h.d': 'Продакшен-компания. Видео, эфиры и подкасты для бизнеса.',
   'h.h': 'Портфолио и резюме видеопродюсера.',
   'h.v': 'Четыре приложения, собранные с помощью ИИ.',
-  'h.alt': 'Дмитрий Перегон',
-  'h.about': 'Шесть лет продюсирую видео, стримы и подкасты. Приложения — в свободное время.',
   't.mail': 'Написать',
-  'x.cv': 'Смотреть резюме',
-  'x.studio': 'Peregon Digital',
-  'x.lines': 'Куда пойти',
-  'x.open': 'Открыть',
   'x.copy': 'Скопировать почту',
-  'x.copied': 'Скопировано',
+  'c.cp': 'Читалка ID-карт Сербии',
+  'c.tz': 'Тизер запуска',
   'c.h': 'Давайте поговорим',
   'c.p': 'Продакшен, роль в команде или идея приложения.'
 };
@@ -149,60 +123,13 @@ window.I18N_RU = {
 <script src="/assets/js/site.js"></script>
 <script>
 (function(){
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  /* gooey blobs follow the pointer; hovering a word in the headline pulls its blob under it */
-  var hero=document.getElementById('hero'),blobs=[].slice.call(hero.querySelectorAll('.blob'));
-  var base=[[.22,.42],[.5,.66],[.78,.38]],k=[.16,.26,-.12],lag=[.07,.045,.06];
-  var st=blobs.map(function(){return {x:0,y:0,s:1}});
-  var ptr={x:.5,y:.5},hot=null,t0=performance.now();
-  hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();ptr.x=(e.clientX-r.left)/r.width;ptr.y=(e.clientY-r.top)/r.height});
-  [['.to-d',0],['.to-h',1],['.to-v',2]].forEach(function(p){
-    hero.querySelectorAll('.hero h1 '+p[0]).forEach(function(a){});
-  });
-  hero.addEventListener('pointerover',function(e){
-    var a=e.target.closest&&e.target.closest('h1 a');if(!a)return;
-    hot={i:a.classList.contains('to-d')?0:a.classList.contains('to-h')?1:2,el:a};
-  });
-  hero.addEventListener('pointerout',function(e){if(e.target.closest&&e.target.closest('h1 a'))hot=null});
-  function frame(now){
-    var r=hero.getBoundingClientRect(),w=r.width,h=r.height,t=(now-t0)/1000;
-    blobs.forEach(function(b,i){
-      var size=b.offsetWidth,tx=base[i][0]*w+(ptr.x-.5)*w*k[i],ty=base[i][1]*h+(ptr.y-.5)*h*k[i],sc=1;
-      if(!reduce){tx+=Math.sin(t*.6+i*2)*24;ty+=Math.cos(t*.5+i*1.7)*20}
-      if(hot&&hot.i===i){var q=hot.el.getBoundingClientRect();tx=q.left-r.left+q.width/2;ty=q.top-r.top+q.height/2;sc=1.35}
-      var s=st[i];s.x+=(tx-size/2-s.x)*lag[i]*2;s.y+=(ty-size/2-s.y)*lag[i]*2;s.s+=(sc-s.s)*.08;
-      b.style.transform='translate3d('+s.x.toFixed(1)+'px,'+s.y.toFixed(1)+'px,0) scale('+s.s.toFixed(3)+')';
-    });
-    if(!reduce)requestAnimationFrame(frame);
-  }
-  requestAnimationFrame(frame);
-  if(reduce)hero.addEventListener('pointermove',function(){requestAnimationFrame(frame)});
-
-  /* holo tilt on line cards */
-  if(!reduce&&matchMedia('(hover:hover)').matches){
-    document.querySelectorAll('.lcard').forEach(function(c){
-      c.addEventListener('pointermove',function(e){
-        var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
-        c.classList.add('is-tilting');
-        c.style.setProperty('--mx',(x*100)+'%');c.style.setProperty('--my',(y*100)+'%');
-        c.style.setProperty('--ry',((x-.5)*14)+'deg');c.style.setProperty('--rx',((.5-y)*12)+'deg');
-      });
-      c.addEventListener('pointerleave',function(){
-        c.classList.remove('is-tilting');
-        c.style.setProperty('--rx','0deg');c.style.setProperty('--ry','0deg');
-      });
-    });
-  }
-
-  /* copy email */
   var cp=document.getElementById('copy');
   cp.addEventListener('click',function(){
     var span=cp.firstElementChild;
     function done(){
       cp.dataset.done='true';
-      var ru=document.documentElement.lang==='ru';
-      var keep=span.innerHTML;span.removeAttribute('data-i18n');span.textContent=ru?'Скопировано':'Copied';
+      var keep=span.innerHTML;span.removeAttribute('data-i18n');
+      span.textContent=document.documentElement.lang==='ru'?'Скопировано':'Copied';
       setTimeout(function(){cp.dataset.done='false';span.setAttribute('data-i18n','x.copy');span.innerHTML=keep},1600);
     }
     if(navigator.clipboard)navigator.clipboard.writeText(cp.dataset.mail).then(done,function(){location.href='mailto:'+cp.dataset.mail});

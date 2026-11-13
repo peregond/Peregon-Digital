@@ -4,7 +4,7 @@
 
 | Адрес | Что это | Файл |
 | --- | --- | --- |
-| `peregon.cc` | Главная: гуу-блобы, голо-карточки линий, лента работ (стили в `assets/css/home.css`) | `index.html` |
+| `peregon.cc` | Главная: плотная bento-сетка (интро, три цветные линии, превью работ, контакты) (стили в `assets/css/home.css`) | `index.html` |
 | `peregon.cc/digital` | Визитка компании Peregon Digital | `digital/index.html` |
 | `peregon.cc/hire` | Портфолио и резюме для HR | `hire/index.html` |
 | `peregon.cc/vibe` | Технические проекты | `vibe/index.html` |
