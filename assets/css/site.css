@@ -507,8 +507,6 @@ a.pill:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(11,12,15,.1)}
 .flow-arrow::after{content:"";position:absolute;left:-4px;bottom:0;width:10px;height:10px;border-right:2px solid var(--p-rule);border-bottom:2px solid var(--p-rule);transform:rotate(45deg);
   border-color:color-mix(in srgb, var(--p-fg) 45%, transparent)}
 .flow-arrow{background:color-mix(in srgb, var(--p-fg) 45%, transparent)}
-.ratios{display:flex;align-items:flex-end;gap:10px}
-.ratio{flex:none;border-radius:8px;border:1.5px solid var(--p-fg);display:grid;place-items:center;font-size:.62rem}
 @media (max-width:480px){.flow-row{grid-auto-flow:row}}
 
 .v-note{padding-bottom:clamp(64px,8vw,120px)}
