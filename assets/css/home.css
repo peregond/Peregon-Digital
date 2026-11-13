@@ -8,9 +8,6 @@
 /* ---------- Hero ---------- */
 .page-home .home-hero{padding-block:clamp(40px,6vw,88px) clamp(36px,5vw,64px)}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,64px);align-items:center}
-.hero-who{display:inline-flex;align-items:center;gap:.7rem;padding:.35rem 1rem .35rem .35rem;border-radius:999px;background:var(--white);
-  border:1px solid var(--rule);font-size:.9375rem;font-weight:500;margin-bottom:clamp(20px,3vw,32px);box-shadow:0 6px 16px -10px var(--shadow)}
-.hero-who img{width:36px;aspect-ratio:1;border-radius:50%;object-fit:cover}
 .page-home .home-hero h1{font-size:clamp(3rem,8.4vw,7.6rem);font-weight:600;line-height:.98;letter-spacing:-.055em;max-width:none}
 html[lang="ru"] .page-home .home-hero h1{font-size:clamp(2.4rem,6.6vw,6rem)}
 /* each word wears its line colour as a highlighter stroke */
@@ -34,10 +31,8 @@ html[lang="ru"] .page-home .home-hero h1{font-size:clamp(2.4rem,6.6vw,6rem)}
 .hero-photo:hover::after{rotate:-8deg;translate:-18px 6px}
 @media (max-width:900px){
   .hero-grid{grid-template-columns:minmax(0,1fr)}
-  .hero-photo{display:none}
-  .hero-who img{display:block}
+  .hero-photo{width:min(78%,300px);justify-self:center;margin-top:8px}
 }
-@media (min-width:901px){.hero-who{padding-left:1rem}.hero-who img{display:none}}
 
 /* ---------- Line rows as cards ---------- */
 .page-home .home-lines{padding-bottom:clamp(56px,7vw,104px)}
