@@ -10,132 +10,121 @@
 <meta property="og:description" content="Production company, producer portfolio and side-project apps. Three lines from one station.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://peregon.cc/">
-<meta name="theme-color" content="#EFEFEA">
+<meta name="theme-color" content="#F4F4F0">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/assets/fonts/geologica-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css">
 <link rel="stylesheet" href="/assets/css/home.css">
 </head>
-<body class="page-hub">
-<div class="shell">
-  <header class="bar">
+<body class="page-home">
+<header class="site-header" id="top">
+  <div class="wrap">
     <a class="brand" href="/" aria-label="peregon.cc">
-    <svg viewBox="0 0 24 24" fill="none" stroke-width="4.6" aria-hidden="true">
-      <circle class="arc-d" cx="12" cy="12" r="8" stroke-dasharray="14.755 35.51" transform="rotate(-86 12 12)"/>
-      <circle class="arc-h" cx="12" cy="12" r="8" stroke-dasharray="14.755 35.51" transform="rotate(34 12 12)"/>
-      <circle class="arc-v" cx="12" cy="12" r="8" stroke-dasharray="14.755 35.51" transform="rotate(154 12 12)"/>
-    </svg>
-    <span>peregon</span><small>.cc</small></a>
-    <nav aria-label="Lines">
-      <a class="tactile" href="/digital"><i class="bullet bullet-d">D</i>Digital</a>
-      <a class="tactile" href="/hire"><i class="bullet bullet-h">H</i>Hire</a>
-      <a class="tactile" href="/vibe"><i class="bullet bullet-v">V</i>Vibe</a>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="4.6" aria-hidden="true">
+        <circle class="arc-d" cx="12" cy="12" r="8" stroke-dasharray="14.755 35.51" transform="rotate(-86 12 12)"/>
+        <circle class="arc-h" cx="12" cy="12" r="8" stroke-dasharray="14.755 35.51" transform="rotate(34 12 12)"/>
+        <circle class="arc-v" cx="12" cy="12" r="8" stroke-dasharray="14.755 35.51" transform="rotate(154 12 12)"/>
+      </svg>
+      <span>peregon</span><small>.cc</small>
+    </a>
+    <nav class="route" aria-label="Lines">
+      <a class="stop" href="/digital"><i class="bullet bullet-d">D</i><span>Digital</span></a>
+      <a class="stop" href="/hire"><i class="bullet bullet-h">H</i><span>Hire</span></a>
+      <a class="stop" href="/vibe"><i class="bullet bullet-v">V</i><span>Vibe</span></a>
     </nav>
     <div class="lang" role="group" aria-label="Language">
       <button type="button" data-lang="en" aria-pressed="true">en</button>
       <button type="button" data-lang="ru" aria-pressed="false">ru</button>
     </div>
-    <a class="tactile tactile-dark mail-btn" href="mailto:peregond@icloud.com" data-i18n="t.mail">Get in touch</a>
-  </header>
+  </div>
+</header>
+<main>
+  <section class="home-hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-who"><img src="/assets/img/dmitrii.webp" width="526" height="526" alt="" aria-hidden="true"><span data-i18n="h.alt">Dmitrii Peregon</span></p>
+        <h1 data-i18n="h.h1"><a class="to-d" href="/digital">Production</a>, <a class="to-h" href="/hire">video</a> and <a class="to-v" href="/vibe">apps</a>.</h1>
+        <p class="hero-sub" data-i18n="h.about">Six years of producing video, streams and podcasts. Apps on the side.</p>
+        <div class="btn-row">
+          <a class="btn" href="mailto:peregond@icloud.com" data-i18n="h.mail">Get in touch</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/peregond/" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-stack" aria-hidden="true">
+        <a class="hs hs-d" href="/digital" tabindex="-1"><img src="/assets/img/work/gbfrgUn2MOQ.webp" width="960" height="540" alt=""><i class="bullet bullet-d">D</i></a>
+        <a class="hs hs-h" href="/hire" tabindex="-1"><img src="/assets/img/work/o5N4jWkozaY.webp" width="960" height="540" alt=""><i class="bullet bullet-h">H</i></a>
+        <a class="hs hs-v" href="/vibe" tabindex="-1"><img src="/assets/img/vibe/kachalka-featured.webp" width="1424" height="892" alt=""><i class="bullet bullet-v">V</i></a>
+      </div>
+    </div>
+  </section>
 
-  <main class="bento">
-    <section class="tile t-intro">
-      <div class="who">
-        <img src="/assets/img/dmitrii.webp" width="526" height="526" alt="Dmitrii Peregon" data-i18n-attr="alt:h.alt">
-        <div><b data-i18n="h.alt">Dmitrii Peregon</b><span data-i18n="h.role">Video producer, Peregon Digital</span></div>
+  <section class="wrap home-lines" aria-labelledby="lines-title">
+    <h2 class="sr-only" id="lines-title" data-i18n="h.lines">Lines</h2>
+    <ol class="board">
+      <li><a class="row row-d" href="/digital">
+        <i class="bullet bullet-d">D</i>
+        <span class="row-main"><span class="row-name">Digital</span><span class="row-url">peregon.cc/digital</span></span>
+        <span class="row-desc" data-i18n="h.d">Production company. Video, streams and podcasts for business.</span>
+        <span class="row-go" aria-hidden="true">&rarr;</span>
+      </a></li>
+      <li><a class="row row-h" href="/hire">
+        <i class="bullet bullet-h">H</i>
+        <span class="row-main"><span class="row-name">Hire</span><span class="row-url">peregon.cc/hire</span></span>
+        <span class="row-desc" data-i18n="h.h">Portfolio and CV of a video producer.</span>
+        <span class="row-go" aria-hidden="true">&rarr;</span>
+      </a></li>
+      <li><a class="row row-v" href="/vibe">
+        <i class="bullet bullet-v">V</i>
+        <span class="row-main"><span class="row-name">Vibe</span><span class="row-url">peregon.cc/vibe</span></span>
+        <span class="row-desc" data-i18n="h.v">Four apps built with AI coding tools.</span>
+        <span class="row-go" aria-hidden="true">&rarr;</span>
+      </a></li>
+    </ol>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-word">peregon</div>
       </div>
       <div>
-        <h1 data-i18n="h.h1">Dmitrii Peregon <a class="to-d" href="/digital">runs a production company</a>, <a class="to-h" href="/hire">produces video</a> and <a class="to-v" href="/vibe">vibe-codes apps</a>.</h1>
-        <p data-i18n="h.about">Six years of producing video, streams and podcasts. Apps on the side.</p>
+        <h4 data-i18n="f.lines">Lines</h4>
+        <ul>
+          <li><a href="/digital"><i class="bullet bullet-d">D</i><span data-i18n="f.d">Digital, production company</span></a></li>
+          <li><a href="/hire"><i class="bullet bullet-h">H</i><span data-i18n="f.h">Hire, portfolio and CV</span></a></li>
+          <li><a href="/vibe"><i class="bullet bullet-v">V</i><span data-i18n="f.v">Vibe, apps</span></a></li>
+        </ul>
       </div>
-    </section>
-
-    <a class="tile ltile l-d" href="/digital">
-      <div class="top"><i class="bullet bullet-d">D</i><span class="url">peregon.cc/digital</span></div>
-      <h2>Digital</h2>
-      <p data-i18n="h.d">Production company. Video, streams and podcasts for business.</p>
-      <div class="shot"><img src="/assets/img/work/gbfrgUn2MOQ.webp" width="960" height="540" alt="" loading="lazy"></div>
-      <span class="go">→</span>
-    </a>
-
-    <a class="tile ltile l-h" href="/hire">
-      <div class="top"><i class="bullet bullet-h">H</i><span class="url">peregon.cc/hire</span></div>
-      <h2>Hire</h2>
-      <p data-i18n="h.h">Portfolio and CV of a video producer.</p>
-      <div class="shot"><img src="/assets/img/work/o5N4jWkozaY.webp" width="960" height="540" alt="" loading="lazy"></div>
-      <span class="go">→</span>
-    </a>
-
-    <a class="tile ltile l-v" href="/vibe">
-      <div class="top"><i class="bullet bullet-v">V</i><span class="url">peregon.cc/vibe</span></div>
-      <h2>Vibe</h2>
-      <p data-i18n="h.v">Four apps built with AI coding tools.</p>
-      <div class="shot"><img src="/assets/img/vibe/kachalka-featured.webp" width="1424" height="892" alt="" loading="lazy"></div>
-      <span class="go">→</span>
-    </a>
-
-    <a class="tile imgt i1" href="https://celik.peregon.cc" rel="noopener">
-      <img src="/assets/img/vibe/celik-mac.webp" width="1024" height="674" alt="" loading="lazy">
-      <span class="chip"><i class="bullet bullet-v">V</i><span>Super Celik<small data-i18n="c.cp">ID card reader for Serbia</small></span></span>
-    </a>
-    <a class="tile imgt i2" href="/digital#work">
-      <img src="/assets/img/work/atLv50dhObE.webp" width="960" height="540" alt="" loading="lazy">
-      <span class="chip"><i class="bullet bullet-d">D</i><span>Numiverse<small data-i18n="c.tz">Launch teaser</small></span></span>
-    </a>
-
-    <section class="tile t-talk">
       <div>
-        <h2 data-i18n="c.h">Let's talk</h2>
-        <p data-i18n="c.p">Production, a role or an app idea.</p>
+        <h4 data-i18n="f.contact">Contact</h4>
+        <ul>
+          <li><a href="mailto:peregond@icloud.com">peregond@icloud.com</a></li>
+          <li><a href="https://t.me/peregond" rel="noopener">Telegram</a></li>
+          <li><a href="https://www.linkedin.com/in/peregond/" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/peregond" rel="noopener">GitHub</a></li>
+        </ul>
       </div>
-      <div class="row">
-        <button class="tactile copy-btn" type="button" id="copy" data-mail="peregond@icloud.com"><span data-i18n="x.copy">Copy email</span></button>
-        <a class="tactile" href="https://t.me/peregond" rel="noopener">Telegram</a>
-        <a class="tactile" href="https://github.com/peregond" rel="noopener">GitHub</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="foot">
-    <span data-i18n="f.rights">© 2026 Peregon Digital. Dmitrii Peregon.</span>
-    <span data-i18n="f.note">Peregon: the stretch of track between two stations. This site has three.</span>
-  </footer>
-</div>
-
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="f.rights">© 2026 Peregon Digital. Dmitrii Peregon.</span>
+      <a href="#top" data-i18n="f.top">Back to top</a>
+    </div>
+  </div>
+</footer>
 <script>
 window.I18N_RU = {
   'title': 'Дмитрий Перегон',
-  'h.h1': 'Дмитрий Перегон <a class="to-d" href="/digital">руководит продакшен-компанией</a>, <a class="to-h" href="/hire">продюсирует видео</a> и <a class="to-v" href="/vibe">вайбкодит приложения</a>.',
+  'h.h1': '<a class="to-d" href="/digital">Продакшен</a>, <a class="to-h" href="/hire">видео</a> и <a class="to-v" href="/vibe">приложения</a>.',
+  'h.lines': 'Линии',
   'h.alt': 'Дмитрий Перегон',
-  'h.role': 'Видеопродюсер, Peregon Digital',
+  'h.mail': 'Написать',
   'h.about': 'Шесть лет продюсирую видео, стримы и подкасты. Приложения — в свободное время.',
   'h.d': 'Продакшен-компания. Видео, эфиры и подкасты для бизнеса.',
   'h.h': 'Портфолио и резюме видеопродюсера.',
-  'h.v': 'Четыре приложения, собранные с помощью ИИ.',
-  't.mail': 'Написать',
-  'x.copy': 'Скопировать почту',
-  'c.cp': 'Читалка ID-карт Сербии',
-  'c.tz': 'Тизер запуска',
-  'c.h': 'Давайте поговорим',
-  'c.p': 'Продакшен, роль в команде или идея приложения.'
+  'h.v': 'Четыре приложения, собранные с помощью ИИ.'
 };
 </script>
 <script src="/assets/js/site.js"></script>
-<script>
-(function(){
-  var cp=document.getElementById('copy');
-  cp.addEventListener('click',function(){
-    var span=cp.firstElementChild;
-    function done(){
-      cp.dataset.done='true';
-      var keep=span.innerHTML;span.removeAttribute('data-i18n');
-      span.textContent=document.documentElement.lang==='ru'?'Скопировано':'Copied';
-      setTimeout(function(){cp.dataset.done='false';span.setAttribute('data-i18n','x.copy');span.innerHTML=keep},1600);
-    }
-    if(navigator.clipboard)navigator.clipboard.writeText(cp.dataset.mail).then(done,function(){location.href='mailto:'+cp.dataset.mail});
-    else location.href='mailto:'+cp.dataset.mail;
-  });
-})();
-</script>
 </body>
 </html>
