@@ -70,23 +70,9 @@
           <a class="btn btn-ghost" href="https://github.com/peregond/SaveStories/releases/latest" rel="noopener"><span data-i18n="v.dl">Download</span></a>
         </div>
       </div>
-      <div class="p-visual">
-        <div class="flow" role="img" aria-label="Architecture: SwiftUI app and PySide6 client talk to a shared Node worker that drives Playwright and Chromium and writes files to disk">
-          <div class="flow-row">
-            <div class="node"><b>SwiftUI</b><span data-i18n="v.s.n1">macOS app</span></div>
-            <div class="node"><b>PySide6</b><span data-i18n="v.s.n2">Windows client</span></div>
-          </div>
-          <i class="flow-arrow"></i>
-          <div class="node acc"><b>Node worker</b><span data-i18n="v.s.n3">bridge.mjs, one codebase for both platforms</span></div>
-          <i class="flow-arrow"></i>
-          <div class="node"><b>Playwright + Chromium</b><span data-i18n="v.s.n4">persistent local browser profile</span></div>
-          <i class="flow-arrow"></i>
-          <div class="flow-row">
-            <div class="node"><b>/profile_a</b><span>media + manifest</span></div>
-            <div class="node"><b>/profile_b</b><span>media + manifest</span></div>
-            <div class="node"><b>/profile_c</b><span>media + manifest</span></div>
-          </div>
-        </div>
+      <div class="p-visual has-mac">
+        <img class="shot" src="/assets/img/vibe/saveme-windows.webp" width="1500" height="1000" alt="SaveMe on Windows: the Stories page with a profile queue and results" loading="lazy" data-i18n-attr="alt:v.s.alt1">
+        <img class="shot shot-mac" src="/assets/img/vibe/saveme-mac.webp" width="1100" height="494" alt="SaveMe on macOS: the main Stories window" loading="lazy" data-i18n-attr="alt:v.s.alt2">
       </div>
     </article>
 
@@ -213,8 +199,7 @@ window.I18N_RU = {
   'v.s.f1': 'Пакетная очередь: вставляете список профилей, получаете папку на каждый',
   'v.s.f3': 'Нативные оболочки на обеих системах работают с одним воркером',
   'v.s.f4': 'Автообновление через Sparkle на Mac и GitHub Releases на Windows',
-  'v.s.n1': 'приложение для macOS', 'v.s.n2': 'клиент для Windows',
-  'v.s.n3': 'bridge.mjs, один код для обеих платформ', 'v.s.n4': 'постоянный локальный профиль браузера',
+  'v.s.alt1': 'SaveMe на Windows: страница Stories с очередью профилей и результатом', 'v.s.alt2': 'SaveMe на macOS: главное окно Stories',
   'v.c.tag': 'Одно приложение вместо Čelik и TrustEdge ID для сербских ID-карт, ВНЖ и ПМЖ.',
   'v.c.f1': 'Читает личные данные и фото через USB-ридер или по NFC',
   'v.c.f2': 'Проверяет подпись карты по цепочке сертификатов МУП',
