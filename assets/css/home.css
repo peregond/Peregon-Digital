@@ -23,23 +23,21 @@ html[lang="ru"] .page-home .home-hero h1{font-size:clamp(2.4rem,6.6vw,6rem)}
 .hero-sub{margin-top:clamp(18px,2.4vw,28px);max-width:40ch;font-size:clamp(1.05rem,1.4vw,1.25rem);line-height:1.45;color:var(--fg-2)}
 .hero-copy .btn-row{margin-top:clamp(22px,3vw,34px)}
 
-/* stack of cards */
-.hero-stack{position:relative;aspect-ratio:1/.92;min-height:300px}
-.hs{position:absolute;display:block;width:68%;aspect-ratio:16/10;border-radius:22px;overflow:hidden;background:var(--ink);
-  border:1px solid var(--rule);box-shadow:0 2px 3px rgba(11,12,15,.12),0 28px 40px -22px rgba(11,12,15,.6);
-  transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
-.hs img{width:100%;height:100%;object-fit:cover}
-.hs .bullet{position:absolute;left:12px;top:12px;font-size:.8rem;box-shadow:0 4px 10px -3px rgba(0,0,0,.5)}
-.hs-d{left:0;top:2%;rotate:-6deg}
-.hs-h{right:0;top:28%;rotate:4deg;z-index:2}
-.hs-v{left:10%;bottom:0;rotate:-2deg;z-index:3}
-.hero-stack:hover .hs-d{transform:translate(-10px,-10px) rotate(-3deg)}
-.hero-stack:hover .hs-h{transform:translate(10px,-4px) rotate(3deg)}
-.hero-stack:hover .hs-v{transform:translate(-4px,10px)}
+/* portrait with two line-coloured plates behind it */
+.hero-photo{position:relative;justify-self:end;width:min(100%,460px);aspect-ratio:1;isolation:isolate}
+.hero-photo::before,.hero-photo::after{content:"";position:absolute;inset:0;border-radius:36px;z-index:-1;transition:rotate .5s var(--ease),translate .5s var(--ease)}
+.hero-photo::before{background:var(--yellow);rotate:7deg;translate:14px 6px}
+.hero-photo::after{background:var(--blue);rotate:-5deg;translate:-12px 4px}
+.hero-photo img{width:100%;height:100%;object-fit:cover;border-radius:36px;border:5px solid var(--white);
+  box-shadow:0 2px 3px rgba(11,12,15,.12),0 28px 44px -24px rgba(11,12,15,.55)}
+.hero-photo:hover::before{rotate:10deg;translate:20px 8px}
+.hero-photo:hover::after{rotate:-8deg;translate:-18px 6px}
 @media (max-width:900px){
   .hero-grid{grid-template-columns:minmax(0,1fr)}
-  .hero-stack{display:none}
+  .hero-photo{display:none}
+  .hero-who img{display:block}
 }
+@media (min-width:901px){.hero-who{padding-left:1rem}.hero-who img{display:none}}
 
 /* ---------- Line rows as cards ---------- */
 .page-home .home-lines{padding-bottom:clamp(56px,7vw,104px)}
