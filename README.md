@@ -4,7 +4,7 @@
 
 | Адрес | Что это | Файл |
 | --- | --- | --- |
-| `peregon.cc` | Главная: короткий заголовок, портрет и три линии-карточки (стили в `assets/css/home.css`) | `index.html` |
+| `peregon.cc` | Главная: короткий заголовок, портрет и три анимированные карточки линий (стили в `assets/css/home.css`) | `index.html` |
 | `peregon.cc/digital` | Визитка компании Peregon Digital | `digital/index.html` |
 | `peregon.cc/hire` | Портфолио и резюме для HR | `hire/index.html` |
 | `peregon.cc/vibe` | Технические проекты | `vibe/index.html` |

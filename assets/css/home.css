@@ -34,29 +34,71 @@ html[lang="ru"] .page-home .home-hero h1{font-size:clamp(2.4rem,6.6vw,6rem)}
   .hero-photo{width:min(78%,300px);justify-self:center;margin-top:8px}
 }
 
-/* ---------- Line rows as cards ---------- */
+/* ---------- Line cards, Apple style: title inside, motion beneath ---------- */
 .page-home .home-lines{padding-bottom:clamp(56px,7vw,104px)}
-.page-home .board{display:grid;gap:14px;border-bottom:0}
-.page-home .row{grid-template-columns:auto minmax(0,.9fr) minmax(0,1.2fr) auto;gap:clamp(14px,2.4vw,32px);
-  padding:clamp(20px,2.6vw,32px) clamp(20px,2.8vw,36px);background:var(--white);border:1px solid var(--rule);border-radius:28px;overflow:hidden;
-  box-shadow:0 1px 2px rgba(11,12,15,.05);transition:color .3s,box-shadow .3s,transform .3s var(--ease),border-color .3s}
-.page-home .row::before{inset:0;border-radius:inherit;transform:scale(0);transform-origin:left center;transition:transform .5s var(--ease)}
-.page-home .row::after{display:none}
-.page-home .row:hover{transform:translateY(-2px);box-shadow:0 24px 40px -24px var(--shadow);border-color:var(--c)}
-.page-home .row:hover::before,.page-home .row:focus-visible::before{transform:none}
-.page-home .row .bullet{width:2.6em;height:2.6em;font-size:1rem}
-.row-main{display:grid;gap:.5rem}
-.page-home .row-name{font-size:clamp(2rem,4.2vw,3.5rem);font-weight:600;line-height:1;letter-spacing:-.05em}
-.page-home .row-url{opacity:.7}
-.page-home .row-desc{font-size:clamp(1rem,1.25vw,1.15rem)}
-.row-go{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;border:1.5px solid currentColor;font-size:1.25rem;
-  transition:transform .35s var(--ease),background-color .25s,color .25s}
-.page-home .row:hover .row-go{transform:rotate(-45deg);background:var(--t);color:var(--c);border-color:var(--t)}
+.acards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.6vw,20px)}
+.acard{position:relative;display:flex;flex-direction:column;min-height:clamp(480px,44vw,600px);padding:clamp(24px,2.4vw,34px);border-radius:36px;overflow:hidden;isolation:isolate;
+  color:var(--white);box-shadow:0 1px 2px rgba(11,12,15,.12),0 30px 50px -34px rgba(11,12,15,.6);
+  transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.acard:hover{transform:translateY(-4px);box-shadow:0 1px 2px rgba(11,12,15,.12),0 40px 60px -34px rgba(11,12,15,.7)}
+.ac-d{background:radial-gradient(120% 80% at 50% 0%,#F0553C 0%,#C42310 55%,#8E1405 100%)}
+.ac-h{background:radial-gradient(120% 80% at 50% 0%,#5B8CFF 0%,#2358E8 55%,#0F2F9E 100%)}
+.ac-v{background:radial-gradient(120% 80% at 50% 0%,#FFE06A 0%,#FFC61A 55%,#F2A900 100%);color:var(--ink)}
+.acard{text-decoration:none}
+.ac-text{position:relative;z-index:3;max-width:26ch}
+.ac-text h2,.ac-text p{display:inline;font:600 clamp(1.3rem,1.8vw,1.6rem)/1.2 var(--font-display);letter-spacing:-.03em}
+.ac-text p{margin:0 0 0 .3em;font-weight:500;opacity:.72;letter-spacing:-.015em}
+.ac-go{position:absolute;z-index:4;right:18px;bottom:18px;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;
+  background:rgba(11,12,15,.55);backdrop-filter:blur(8px);color:#fff;font:400 1.6rem/1 var(--font-body);transition:transform .35s var(--ease),background-color .25s}
+.ac-v .ac-go{background:rgba(11,12,15,.8)}
+.acard:hover .ac-go{transform:rotate(90deg);background:#fff;color:var(--ink)}
+.ac-visual{position:absolute;left:0;right:0;bottom:0;top:34%;z-index:1;overflow:hidden;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 18%,#000 82%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 18%,#000 82%,transparent 100%)}
+
+/* Digital: chips scroll up like a list of services */
+.chips-v{display:flex;flex-direction:column;align-items:center;gap:14px;padding-top:10px;animation:scroll-up 22s linear infinite}
+.chip-v{display:inline-flex;align-items:center;gap:.7rem;padding:.8rem 1.5rem;border-radius:999px;background:rgba(0,0,0,.28);
+  border:1px solid rgba(255,255,255,.14);font:500 clamp(1.05rem,1.5vw,1.3rem)/1 var(--font-body);white-space:nowrap;box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
+.chip-v::before{content:"";width:.7em;height:.7em;border-radius:50%;background:#fff}
+.chip-v:nth-child(3n+1)::before{background:var(--yellow)} .chip-v:nth-child(3n+2)::before{background:#8FB2FF}
+.chip-v:nth-child(even){margin-left:2.5rem} .chip-v:nth-child(3n){margin-right:2rem}
+.acard:hover .chips-v{animation-play-state:paused}
+@keyframes scroll-up{to{transform:translateY(calc(-50% - 7px))}}
+
+/* Hire: two columns of work move in opposite directions, with a floating pill */
+.grid-v{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 clamp(18px,2vw,26px)}
+.gcol{display:flex;flex-direction:column;gap:12px}
+.gcol img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;box-shadow:0 10px 20px -10px rgba(0,0,0,.5)}
+.gcol-up{animation:scroll-up 38s linear infinite}
+.gcol-down{animation:scroll-down 44s linear infinite;margin-top:-30px}
+@keyframes scroll-down{from{transform:translateY(calc(-50% - 6px))}to{transform:none}}
+.acard:hover .gcol{animation-play-state:paused}
+.float-pill{position:absolute;left:50%;top:44%;translate:-50% 0;display:flex;align-items:center;gap:1rem;padding:.55rem .55rem .55rem 1.3rem;border-radius:999px;
+  background:rgba(255,255,255,.82);backdrop-filter:blur(14px) saturate(1.4);color:var(--ink);font:600 1.05rem/1 var(--font-body);white-space:nowrap;
+  box-shadow:0 14px 30px -12px rgba(0,0,0,.55);animation:bob 5s ease-in-out infinite}
+.float-pill i,.prompt i{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--ink);color:#fff;font-style:normal;font-size:1.1rem}
+@keyframes bob{50%{transform:translateY(-8px)}}
+
+/* Vibe: app icons float over a screenshot while a prompt types itself */
+.app-shot{position:absolute;left:-6%;right:-14%;bottom:-10%;border-radius:20px;overflow:hidden;rotate:-4deg;box-shadow:0 24px 40px -16px rgba(0,0,0,.6);animation:drift 9s ease-in-out infinite alternate}
+.app-shot img{display:block;width:100%}
+@keyframes drift{to{rotate:-2deg;translate:-8px -10px}}
+.app-ico{position:absolute;width:clamp(48px,5vw,64px);height:auto;aspect-ratio:1;border-radius:16px;box-shadow:0 12px 20px -8px rgba(0,0,0,.5);animation:bob 4.6s ease-in-out infinite}
+.app-ico.i1{left:10%;top:6%;animation-delay:-.8s} .app-ico.i2{left:34%;top:-2%;animation-delay:-2.2s}
+.app-ico.i3{left:58%;top:8%;animation-delay:-1.4s} .app-ico.i4{left:80%;top:0;animation-delay:-3s}
+.prompt{position:absolute;left:50%;bottom:20%;translate:-50% 0;width:min(86%,360px);display:flex;align-items:center;justify-content:space-between;gap:.8rem;
+  padding:.55rem .55rem .55rem 1.2rem;border-radius:999px;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);color:var(--ink);
+  font:500 .95rem/1.2 var(--font-body);box-shadow:0 14px 30px -12px rgba(0,0,0,.6)}
+.typed{display:block;overflow:hidden;white-space:nowrap;animation:typing 7s steps(36) infinite}
+@keyframes typing{0%{clip-path:inset(0 100% 0 0)}55%,85%{clip-path:inset(0 0 0 0)}100%{clip-path:inset(0 100% 0 0)}}
+
 @media (max-width:900px){
-  .page-home .row{grid-template-columns:auto minmax(0,1fr) auto;gap:.5rem 1rem}
-  .page-home .row-desc{grid-column:1/-1;order:3}
-  .row-go{width:44px;height:44px}
+  .acards{grid-template-columns:minmax(0,1fr)}
+  .acard{min-height:480px}
+}
+@media (prefers-reduced-motion:reduce){
+  .chips-v,.gcol,.float-pill,.app-shot,.app-ico,.typed{animation:none}
+  .typed{clip-path:none}
 }
 
-/* footer: only the back-to-top link remains */
-.page-home .footer-bottom{justify-content:flex-end}
+.ac-text h2::after{content:"."}
