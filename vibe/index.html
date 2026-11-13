@@ -33,23 +33,22 @@
       <a class="stop" href="/vibe" aria-current="page"><i class="bullet bullet-v">V</i><span>Vibe</span></a>
     </nav>
     <div class="lang" role="group" aria-label="Language">
-      <button type="button" data-lang="en" aria-pressed="true">EN</button>
-      <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      <button type="button" data-lang="en" aria-pressed="true">en</button>
+      <button type="button" data-lang="ru" aria-pressed="false">ru</button>
     </div>
   </div>
 </header>
 <main>
   <section class="v-hero" data-stop="Vibe">
     <div class="wrap">
-      <p class="eyebrow"><i class="bullet bullet-v">V</i><span data-i18n="v.eyebrow">Side track · software</span></p>
       <h1 data-i18n="v.h1">Vibe-coded.</h1>
       <div>
-        <p class="lead" data-i18n="v.lead">I produce video for a living. When I need a tool that does not exist, I build it with AI coding assistants. Four of them grew into full apps.</p>
+        <p class="lead" data-i18n="v.lead">Four tools I built with AI coding assistants grew into full apps.</p>
         <nav class="v-index" aria-label="Projects">
-          <a href="#saveme"><span class="mono">01</span><span>SaveMe</span><span class="mono">macOS · Windows</span></a>
-          <a href="#supercelik"><span class="mono">02</span><span>Super Celik</span><span class="mono">macOS · Windows · Android · iOS</span></a>
-          <a href="#kachalka"><span class="mono">03</span><span data-i18n="v.k.name">Kachalka</span><span class="mono">Windows · macOS</span></a>
-          <a href="#unik"><span class="mono">04</span><span data-i18n="v.u.name">Uniquifier</span><span class="mono">Web</span></a>
+          <a href="#saveme"><span>SaveMe</span><span class="label">macOS, Windows</span></a>
+          <a href="#supercelik"><span>Super Celik</span><span class="label">macOS, Windows, Android, iOS</span></a>
+          <a href="#kachalka"><span data-i18n="v.k.name">Kachalka</span><span class="label">Windows, macOS</span></a>
+          <a href="#unik"><span data-i18n="v.u.name">Uniquifier</span><span class="label">Web</span></a>
         </nav>
       </div>
     </div>
@@ -62,21 +61,19 @@
       <div>
         <div class="p-top">
           <img src="/assets/img/vibe/saveme-icon.svg" width="56" height="56" alt="">
-          <p class="mono">macOS · Windows<br><span data-release="peregond/SaveStories">v0.6.95</span></p>
-          <span class="p-num">01 / 04</span>
+          <p>macOS, Windows<span class="mono" data-release="peregond/SaveStories">v0.6.95</span></p>
         </div>
         <h2>SaveMe</h2>
         <p class="p-tag" data-i18n="v.s.tag">A desktop app that saves active Instagram Stories to your disk.</p>
         <ul class="p-facts">
           <li data-i18n="v.s.f1">Batch queue: paste a list of profiles, get a folder per profile</li>
-          <li data-i18n="v.s.f2">Sign-in and session stay in a local browser profile</li>
           <li data-i18n="v.s.f3">Native shells on both systems share one download worker</li>
           <li data-i18n="v.s.f4">Auto-updates through Sparkle on Mac and GitHub Releases on Windows</li>
         </ul>
-        <div class="chips"><span class="chip">SwiftUI</span><span class="chip">PySide6</span><span class="chip">Node 24</span><span class="chip">Playwright</span><span class="chip">Chromium</span></div>
+        <div class="chips"><span class="chip">SwiftUI</span><span class="chip">PySide6</span><span class="chip">Node 24</span><span class="chip">Playwright</span></div>
         <div class="btn-row">
-          <a class="btn" href="https://github.com/peregond/SaveStories" rel="noopener">GitHub <span class="arr" aria-hidden="true">↗</span></a>
-          <a class="btn btn-ghost" href="https://github.com/peregond/SaveStories/releases/latest" rel="noopener"><span data-i18n="v.dl">Download</span> <span class="arr" aria-hidden="true">↗</span></a>
+          <a class="btn" href="https://github.com/peregond/SaveStories" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="https://github.com/peregond/SaveStories/releases/latest" rel="noopener"><span data-i18n="v.dl">Download</span></a>
         </div>
       </div>
       <div class="p-visual">
@@ -104,26 +101,23 @@
       <div>
         <div class="p-top">
           <img src="/assets/img/vibe/celik-icon.webp" width="56" height="56" alt="">
-          <p class="mono">macOS · Windows · Android · iOS<br><span data-release="peregond/SuperCelik">v0.9.8</span></p>
-          <span class="p-num">02 / 04</span>
+          <p>macOS, Windows, Android, iOS<span class="mono" data-release="peregond/SuperCelik">v0.9.8</span></p>
         </div>
         <h2>Super Celik</h2>
         <p class="p-tag" data-i18n="v.c.tag">One app instead of Čelik and TrustEdge ID for Serbian ID cards and residence permits.</p>
         <ul class="p-facts">
           <li data-i18n="v.c.f1">Reads personal data and photo over a USB reader or NFC</li>
           <li data-i18n="v.c.f2">Verifies the card signature against the MUP certificate chain</li>
-          <li data-i18n="v.c.f3">Changes the PIN and signs files (.p7s) with the card key</li>
           <li data-i18n="v.c.f4">Makes browser sign-in to eid.gov.rs work on a Mac</li>
-          <li data-i18n="v.c.f5">No accounts, analytics or servers. Russian, English and Serbian</li>
         </ul>
-        <div class="chips"><span class="chip">SwiftUI</span><span class="chip">WPF · .NET 8</span><span class="chip">Kotlin · Compose</span><span class="chip">CryptoTokenKit</span><span class="chip">PC/SC</span><span class="chip">NFC</span></div>
+        <div class="chips"><span class="chip">SwiftUI</span><span class="chip">WPF on .NET 8</span><span class="chip">Jetpack Compose</span><span class="chip">NFC</span></div>
         <div class="btn-row">
-          <a class="btn" href="https://github.com/peregond/SuperCelik" rel="noopener">GitHub <span class="arr" aria-hidden="true">↗</span></a>
-          <a class="btn btn-ghost" href="https://github.com/peregond/SuperCelik/releases/latest" rel="noopener"><span data-i18n="v.dl">Download</span> <span class="arr" aria-hidden="true">↗</span></a>
+          <a class="btn" href="https://github.com/peregond/SuperCelik" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="https://github.com/peregond/SuperCelik/releases/latest" rel="noopener"><span data-i18n="v.dl">Download</span></a>
         </div>
-        <p class="mono" style="margin-top:1.25rem;color:var(--p-2);text-transform:none;line-height:1.6" data-i18n="v.c.note">Independent implementation, not affiliated with MUP RS. Screenshots show demo data.</p>
+        <p class="p-note" data-i18n="v.c.note">Independent implementation, not affiliated with MUP RS. Screenshots show demo data.</p>
       </div>
-      <div class="p-visual stage has-phone">
+      <div class="p-visual has-phone">
         <img class="shot bare" src="/assets/img/vibe/celik-mac.webp" width="1024" height="674" alt="Super Celik on macOS: personal data screen with demo data" loading="lazy" data-i18n-attr="alt:v.c.alt1">
         <img class="shot-phone" src="/assets/img/vibe/celik-iphone.webp" width="420" height="914" alt="Super Celik on iPhone" loading="lazy" data-i18n-attr="alt:v.c.alt2">
       </div>
@@ -134,8 +128,7 @@
       <div>
         <div class="p-top">
           <img src="/assets/img/vibe/kachalka-icon.webp" width="56" height="56" alt="">
-          <p class="mono">Windows · macOS<br><span data-release="peregond/ka4alka">v0.45.3</span></p>
-          <span class="p-num">03 / 04</span>
+          <p>Windows, macOS<span class="mono" data-release="peregond/ka4alka">v0.45.3</span></p>
         </div>
         <h2 data-i18n="v.k.name">Kachalka</h2>
         <p class="p-tag" data-i18n="v.k.tag">A native catalog of films, series and games with one download queue.</p>
@@ -143,15 +136,14 @@
           <li data-i18n="v.k.f1">WPF on Windows, SwiftUI and AppKit on Mac. No Electron, no embedded browser</li>
           <li data-i18n="v.k.f2">Curated collections, filters by genre, year, quality and voice-over studio</li>
           <li data-i18n="v.k.f3">Send a download to another computer at home or control it from a phone</li>
-          <li data-i18n="v.k.f4">Signed component updates with rollback, interface in Russian and English</li>
         </ul>
-        <div class="chips"><span class="chip">WPF · .NET</span><span class="chip">SwiftUI</span><span class="chip">AppKit</span><span class="chip">Next.js</span></div>
+        <div class="chips"><span class="chip">WPF on .NET</span><span class="chip">SwiftUI</span><span class="chip">AppKit</span></div>
         <div class="btn-row">
-          <a class="btn" href="https://ka4alka.cc" rel="noopener">ka4alka.cc <span class="arr" aria-hidden="true">↗</span></a>
-          <a class="btn btn-ghost" href="https://github.com/peregond/ka4alka" rel="noopener">GitHub <span class="arr" aria-hidden="true">↗</span></a>
+          <a class="btn" href="https://ka4alka.cc" rel="noopener">ka4alka.cc</a>
+          <a class="btn btn-ghost" href="https://github.com/peregond/ka4alka" rel="noopener">GitHub</a>
         </div>
       </div>
-      <div class="p-visual stage">
+      <div class="p-visual">
         <img class="shot" src="/assets/img/vibe/kachalka-featured.webp" width="1424" height="892" alt="Kachalka on Windows: the Featured page with curated collections" loading="lazy" data-i18n-attr="alt:v.k.alt">
       </div>
     </article>
@@ -161,23 +153,21 @@
       <div>
         <div class="p-top">
           <img src="/assets/img/vibe/unik-icon.svg" width="56" height="56" alt="">
-          <p class="mono">Web<br>v0.2.13</p>
-          <span class="p-num">04 / 04</span>
+          <p>Web<span class="mono">v0.2.13</span></p>
         </div>
         <h2 data-i18n="v.u.name">Uniquifier</h2>
         <p class="p-tag" data-i18n="v.u.tag">A web tool that turns one video or image into a batch of unique variations for ad placements.</p>
         <ul class="p-facts">
           <li data-i18n="v.u.f1">A six-step wizard: sources, 18+ mark, format, file name, extras, review</li>
           <li data-i18n="v.u.f2">Placement presets, up to five variations per file, style and overlay changes, metadata removed</li>
-          <li data-i18n="v.u.f3">Batch progress, history, repeat a past job in one click</li>
           <li data-i18n="v.u.f4">Results as a streamed ZIP or archived to Google Drive</li>
         </ul>
-        <div class="chips"><span class="chip">React</span><span class="chip">Vite</span><span class="chip">Fastify</span><span class="chip">TypeScript</span><span class="chip">FFmpeg</span><span class="chip">PostgreSQL</span><span class="chip">Redis</span></div>
+        <div class="chips"><span class="chip">React</span><span class="chip">Fastify</span><span class="chip">TypeScript</span><span class="chip">FFmpeg</span><span class="chip">PostgreSQL</span></div>
         <div class="btn-row">
-          <span class="p-private" data-i18n="v.u.private">Private repository · Betrch-Unik</span>
+          <span class="p-private" data-i18n="v.u.private">Private repository: Betrch-Unik</span>
         </div>
       </div>
-      <div class="p-visual stage">
+      <div class="p-visual">
         <img class="shot" src="/assets/img/vibe/unik-format.webp" width="1424" height="960" alt="Uniquifier: the Format and export step of the six-step wizard" loading="lazy" data-i18n-attr="alt:v.u.alt">
       </div>
     </article>
@@ -189,7 +179,7 @@
       <div class="btn-row">
         <a class="btn" href="/hire"><i class="bullet bullet-h">H</i> <span data-i18n="v.b1">Portfolio and CV</span></a>
         <a class="btn btn-ghost" href="/digital"><i class="bullet bullet-d">D</i> Peregon Digital</a>
-        <a class="btn btn-ghost" href="https://github.com/peregond" rel="noopener">GitHub <span class="arr" aria-hidden="true">↗</span></a>
+        <a class="btn btn-ghost" href="https://github.com/peregond" rel="noopener">GitHub</a>
       </div>
     </div>
   </section>
@@ -220,22 +210,20 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span class="mono" data-i18n="f.rights">© 2026 Peregon Digital. Dmitrii Peregon.</span>
-      <a class="mono" href="#top" data-i18n="f.top">Back to top ↑</a>
+      <span data-i18n="f.rights">© 2026 Peregon Digital. Dmitrii Peregon.</span>
+      <a href="#top" data-i18n="f.top">Back to top</a>
     </div>
   </div>
 </footer>
 <script>
 window.I18N_RU = {
   'title': 'Вайбкод — приложения Дмитрия Перегона',
-  'v.eyebrow': 'Боковая ветка · софт',
   'v.h1': 'Навайбкодил.',
-  'v.lead': 'Я зарабатываю продюсированием видео. Когда нужного инструмента нет, я собираю его сам с помощью ИИ-ассистентов. Четыре таких инструмента выросли в полноценные приложения.',
+  'v.lead': 'Четыре инструмента, которые я собрал с ИИ-ассистентами, выросли в полноценные приложения.',
   'v.k.name': 'Качалка', 'v.u.name': 'Уникализатор',
   'v.dl': 'Скачать',
   'v.s.tag': 'Десктоп-приложение, которое сохраняет активные Instagram Stories на диск.',
   'v.s.f1': 'Пакетная очередь: вставляете список профилей, получаете папку на каждый',
-  'v.s.f2': 'Вход и сессия остаются в локальном профиле браузера',
   'v.s.f3': 'Нативные оболочки на обеих системах работают с одним воркером',
   'v.s.f4': 'Автообновление через Sparkle на Mac и GitHub Releases на Windows',
   'v.s.n1': 'приложение для macOS', 'v.s.n2': 'клиент для Windows',
@@ -243,23 +231,19 @@ window.I18N_RU = {
   'v.c.tag': 'Одно приложение вместо Čelik и TrustEdge ID для сербских ID-карт, ВНЖ и ПМЖ.',
   'v.c.f1': 'Читает личные данные и фото через USB-ридер или по NFC',
   'v.c.f2': 'Проверяет подпись карты по цепочке сертификатов МУП',
-  'v.c.f3': 'Меняет PIN и подписывает файлы (.p7s) ключом карты',
   'v.c.f4': 'Помогает войти на eid.gov.rs из браузера на Mac',
-  'v.c.f5': 'Без аккаунтов, аналитики и серверов. Русский, английский и сербский',
   'v.c.note': 'Независимая реализация, не связана с МУП РС. На скриншотах демо-данные.',
   'v.c.alt1': 'Super Celik на macOS: экран личных данных с демо-данными', 'v.c.alt2': 'Super Celik на iPhone',
   'v.k.tag': 'Нативный каталог фильмов, сериалов и игр с общей очередью загрузок.',
   'v.k.f1': 'WPF на Windows, SwiftUI и AppKit на Mac. Без Electron и встроенного браузера',
   'v.k.f2': 'Курируемые подборки, фильтры по жанру, году, качеству и студии озвучки',
   'v.k.f3': 'Загрузку можно отправить на другой компьютер дома или управлять ей с телефона',
-  'v.k.f4': 'Подписанные обновления компонентов с откатом, интерфейс на русском и английском',
   'v.k.alt': 'Качалка на Windows: страница «Актуальное» с подборками',
   'v.u.tag': 'Веб-инструмент, который делает из одного видео или картинки пачку уникальных вариаций под рекламные плейсменты.',
   'v.u.f1': 'Мастер из шести шагов: исходники, плашка 18+, формат, имя файла, дополнительно, проверка',
   'v.u.f2': 'Пресеты под площадки, до пяти вариаций на файл, стили и наложения, метаданные удаляются',
-  'v.u.f3': 'Прогресс пакета, история, повтор прошлого задания в один клик',
   'v.u.f4': 'Результат потоковым ZIP-архивом или в архив на Google Drive',
-  'v.u.private': 'Приватный репозиторий · Betrch-Unik',
+  'v.u.private': 'Приватный репозиторий: Betrch-Unik',
   'v.u.alt': 'Уникализатор: шаг «Формат и экспорт» в мастере из шести шагов',
   'v.s.next': 'Дальше',
   'v.note': 'Основная работа — продакшен. Посмотрите, что я делаю, когда включена камера.',
