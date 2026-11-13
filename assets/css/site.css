@@ -155,9 +155,13 @@ p{text-wrap:pretty}
   .route{margin-inline:auto}
   .site-header .wrap{gap:.4rem}
 }
-@media (max-width:400px){
-  .stop:not([aria-current="page"]) span{display:none}
-  .stop:not([aria-current="page"]){padding:.3rem}
+@media (max-width:560px){
+  .brand{font-size:1.35rem}
+  .stop span{display:none}
+  .stop{padding:.3rem}
+  .route{gap:.15rem;min-width:0}
+  .lang{flex:none}
+  .lang button{padding:.4rem .6rem}
 }
 
 /* ---------- Route rail: scroll position as a train on a line ---------- */
