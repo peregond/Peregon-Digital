@@ -167,8 +167,8 @@
         <h2 data-i18n="v.u.name">Uniquifier</h2>
         <p class="p-tag" data-i18n="v.u.tag">A web tool that turns one video or image into a batch of unique variations for ad placements.</p>
         <ul class="p-facts">
-          <li data-i18n="v.u.f1">Export presets for Stories 9:16, feed 4:5 and square 1:1</li>
-          <li data-i18n="v.u.f2">Colour, sharpness, speed and overlay changes per variation, metadata removed</li>
+          <li data-i18n="v.u.f1">A six-step wizard: sources, 18+ mark, format, file name, extras, review</li>
+          <li data-i18n="v.u.f2">Placement presets, up to five variations per file, style and overlay changes, metadata removed</li>
           <li data-i18n="v.u.f3">Batch progress, history, repeat a past job in one click</li>
           <li data-i18n="v.u.f4">Results as a streamed ZIP or archived to Google Drive</li>
         </ul>
@@ -177,26 +177,8 @@
           <span class="p-private" data-i18n="v.u.private">Private repository · Betrch-Unik</span>
         </div>
       </div>
-      <div class="p-visual">
-        <div class="flow" role="img" aria-label="Pipeline: source file, preset and variations, FFmpeg queue, then ZIP or Google Drive">
-          <div class="node"><b data-i18n="v.u.n1">Source files</b><span data-i18n="v.u.n1s">video and images, uploaded three at a time</span></div>
-          <i class="flow-arrow"></i>
-          <div class="node">
-            <b data-i18n="v.u.n2">Presets</b>
-            <div class="ratios" aria-hidden="true">
-              <span class="ratio" style="width:36px;height:64px">9:16</span>
-              <span class="ratio" style="width:44px;height:55px">4:5</span>
-              <span class="ratio" style="width:48px;height:48px">1:1</span>
-            </div>
-          </div>
-          <i class="flow-arrow"></i>
-          <div class="node acc"><b data-i18n="v.u.n3">FFmpeg queue</b><span>libx264 · libx265 · libwebp</span></div>
-          <i class="flow-arrow"></i>
-          <div class="flow-row">
-            <div class="node"><b>ZIP</b><span data-i18n="v.u.n4">streamed download</span></div>
-            <div class="node"><b>Google Drive</b><span data-i18n="v.u.n5">archive</span></div>
-          </div>
-        </div>
+      <div class="p-visual stage">
+        <img class="shot" src="/assets/img/vibe/unik-format.webp" width="1424" height="960" alt="Uniquifier: the Format and export step of the six-step wizard" loading="lazy" data-i18n-attr="alt:v.u.alt">
       </div>
     </article>
   </div>
@@ -273,13 +255,12 @@ window.I18N_RU = {
   'v.k.f4': 'Подписанные обновления компонентов с откатом, интерфейс на русском и английском',
   'v.k.alt': 'Качалка на Windows: страница «Актуальное» с подборками',
   'v.u.tag': 'Веб-инструмент, который делает из одного видео или картинки пачку уникальных вариаций под рекламные плейсменты.',
-  'v.u.f1': 'Пресеты экспорта: Stories 9:16, лента 4:5 и квадрат 1:1',
-  'v.u.f2': 'Цвет, резкость, скорость и оверлеи для каждой вариации, метаданные удаляются',
+  'v.u.f1': 'Мастер из шести шагов: исходники, плашка 18+, формат, имя файла, дополнительно, проверка',
+  'v.u.f2': 'Пресеты под площадки, до пяти вариаций на файл, стили и наложения, метаданные удаляются',
   'v.u.f3': 'Прогресс пакета, история, повтор прошлого задания в один клик',
   'v.u.f4': 'Результат потоковым ZIP-архивом или в архив на Google Drive',
   'v.u.private': 'Приватный репозиторий · Betrch-Unik',
-  'v.u.n1': 'Исходники', 'v.u.n1s': 'видео и изображения, загрузка по три файла',
-  'v.u.n2': 'Пресеты', 'v.u.n3': 'Очередь FFmpeg', 'v.u.n4': 'потоковая выгрузка', 'v.u.n5': 'архив',
+  'v.u.alt': 'Уникализатор: шаг «Формат и экспорт» в мастере из шести шагов',
   'v.s.next': 'Дальше',
   'v.note': 'Основная работа — продакшен. Посмотрите, что я делаю, когда включена камера.',
   'v.b1': 'Портфолио и резюме'
